@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6555DF881C21DBD000A8D355 /* DMPCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6555DF871C21DBD000A8D355 /* DMPCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF8D1C21DBEE00A8D355 /* JNWCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15146D1714C90800871248 /* JNWCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF8E1C21DBF400A8D355 /* JNWCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15146E1714C90800871248 /* JNWCollectionViewLayout.m */; };
+		6555DF8F1C21DC0900A8D355 /* JNWCollectionViewListLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1514721714D39600871248 /* JNWCollectionViewListLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF901C21DC0F00A8D355 /* JNWCollectionViewListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1514731714D39600871248 /* JNWCollectionViewListLayout.m */; };
+		6555DF911C21DC1200A8D355 /* JNWCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1514801715361D00871248 /* JNWCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF921C21DC1700A8D355 /* JNWCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1514811715361D00871248 /* JNWCollectionViewGridLayout.m */; };
+		6555DF931C21DC1B00A8D355 /* JNWCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC05C681807808E00CAED48 /* JNWCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF941C21DC2800A8D355 /* JNWCollectionViewFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C71E8170CA8D3004A91DB /* JNWCollectionViewFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF951C21DC3000A8D355 /* JNWCollectionViewFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3C71E9170CA8D3004A91DB /* JNWCollectionViewFramework.m */; };
+		6555DF961C21DC6100A8D355 /* JNWCollectionViewData.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE145331747519700DD3FCA /* JNWCollectionViewData.h */; };
+		6555DF971C21DC6700A8D355 /* JNWCollectionViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE145341747519700DD3FCA /* JNWCollectionViewData.m */; };
+		6555DF981C21DC6A00A8D355 /* JNWCollectionViewDocumentView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA276B0171D1C4B005C8E56 /* JNWCollectionViewDocumentView.h */; };
+		6555DF991C21DC7300A8D355 /* JNWCollectionViewDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA276B1171D1C4B005C8E56 /* JNWCollectionViewDocumentView.m */; };
+		6555DF9A1C21DC7500A8D355 /* JNWCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C71EB170CA8D3004A91DB /* JNWCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF9B1C21DC7B00A8D355 /* JNWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3C71EC170CA8D3004A91DB /* JNWCollectionViewCell.m */; };
+		6555DF9C1C21DC7E00A8D355 /* JNWCollectionViewReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C71EE170CA8D3004A91DB /* JNWCollectionViewReusableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF9D1C21DD2500A8D355 /* JNWCollectionViewReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3C71EF170CA8D3004A91DB /* JNWCollectionViewReusableView.m */; };
+		6555DF9E1C21DD2800A8D355 /* NSIndexPath+JNWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C71F2170CA8D3004A91DB /* NSIndexPath+JNWAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DF9F1C21DD2D00A8D355 /* NSIndexPath+JNWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3C71F3170CA8D3004A91DB /* NSIndexPath+JNWAdditions.m */; };
+		6555DFA01C21DD3000A8D355 /* JNWCollectionView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C71EA170CA8D3004A91DB /* JNWCollectionView+Private.h */; };
+		6555DFA11C21DD3400A8D355 /* JNWCollectionViewCell+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C71ED170CA8D3004A91DB /* JNWCollectionViewCell+Private.h */; };
+		6555DFA21C21DD3700A8D355 /* JNWCollectionViewReusableView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB39819C1731A1B50062B2E0 /* JNWCollectionViewReusableView+Private.h */; };
+		6555DFA31C21DD3A00A8D355 /* JNWCollectionViewLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0EA368189472A400E28525 /* JNWCollectionViewLayout+Private.h */; };
+		6555DFA41C21DD3D00A8D355 /* JNWClipView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB38E38A17DF099A00D50B3C /* JNWClipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DFA51C21DD4300A8D355 /* JNWClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38E38B17DF099A00D50B3C /* JNWClipView.m */; };
+		6555DFA61C21DD4500A8D355 /* JNWScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB38E38C17DF099A00D50B3C /* JNWScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6555DFA71C21DD4B00A8D355 /* JNWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38E38D17DF099A00D50B3C /* JNWScrollView.m */; };
 		AB0EA369189472A400E28525 /* JNWCollectionViewLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0EA368189472A400E28525 /* JNWCollectionViewLayout+Private.h */; };
 		AB15146F1714C90800871248 /* JNWCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15146D1714C90800871248 /* JNWCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB1514701714C90800871248 /* JNWCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15146E1714C90800871248 /* JNWCollectionViewLayout.m */; };
@@ -40,6 +68,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6555DF851C21DBD000A8D355 /* DMPCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMPCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6555DF871C21DBD000A8D355 /* DMPCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMPCollectionView.h; sourceTree = "<group>"; };
+		6555DF891C21DBD000A8D355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0EA368189472A400E28525 /* JNWCollectionViewLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "JNWCollectionViewLayout+Private.h"; path = "JNWCollectionView/JNWCollectionViewLayout+Private.h"; sourceTree = SOURCE_ROOT; };
 		AB15146D1714C90800871248 /* JNWCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JNWCollectionViewLayout.h; path = JNWCollectionView/JNWCollectionViewLayout.h; sourceTree = SOURCE_ROOT; };
 		AB15146E1714C90800871248 /* JNWCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JNWCollectionViewLayout.m; path = JNWCollectionView/JNWCollectionViewLayout.m; sourceTree = SOURCE_ROOT; };
@@ -80,6 +111,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6555DF811C21DBD000A8D355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABB023ED170791D300537A92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6555DF861C21DBD000A8D355 /* DMPCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6555DF871C21DBD000A8D355 /* DMPCollectionView.h */,
+				6555DF891C21DBD000A8D355 /* Info.plist */,
+			);
+			path = DMPCollectionView;
+			sourceTree = "<group>";
+		};
 		AB1514711714D36200871248 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				ABB023FA170791D300537A92 /* JNWCollectionView */,
+				6555DF861C21DBD000A8D355 /* DMPCollectionView */,
 				ABB023F3170791D300537A92 /* Frameworks */,
 				ABB023F2170791D300537A92 /* Products */,
 			);
@@ -129,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				ABB023F1170791D300537A92 /* JNWCollectionView.framework */,
+				6555DF851C21DBD000A8D355 /* DMPCollectionView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +252,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		6555DF821C21DBD000A8D355 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6555DF941C21DC2800A8D355 /* JNWCollectionViewFramework.h in Headers */,
+				6555DFA01C21DD3000A8D355 /* JNWCollectionView+Private.h in Headers */,
+				6555DF9A1C21DC7500A8D355 /* JNWCollectionViewCell.h in Headers */,
+				6555DF881C21DBD000A8D355 /* DMPCollectionView.h in Headers */,
+				6555DF911C21DC1200A8D355 /* JNWCollectionViewGridLayout.h in Headers */,
+				6555DFA41C21DD3D00A8D355 /* JNWClipView.h in Headers */,
+				6555DFA61C21DD4500A8D355 /* JNWScrollView.h in Headers */,
+				6555DF931C21DC1B00A8D355 /* JNWCollectionView.h in Headers */,
+				6555DF961C21DC6100A8D355 /* JNWCollectionViewData.h in Headers */,
+				6555DF9E1C21DD2800A8D355 /* NSIndexPath+JNWAdditions.h in Headers */,
+				6555DFA11C21DD3400A8D355 /* JNWCollectionViewCell+Private.h in Headers */,
+				6555DF981C21DC6A00A8D355 /* JNWCollectionViewDocumentView.h in Headers */,
+				6555DF9C1C21DC7E00A8D355 /* JNWCollectionViewReusableView.h in Headers */,
+				6555DFA31C21DD3A00A8D355 /* JNWCollectionViewLayout+Private.h in Headers */,
+				6555DFA21C21DD3700A8D355 /* JNWCollectionViewReusableView+Private.h in Headers */,
+				6555DF8F1C21DC0900A8D355 /* JNWCollectionViewListLayout.h in Headers */,
+				6555DF8D1C21DBEE00A8D355 /* JNWCollectionViewLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABB023EE170791D300537A92 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +303,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6555DF841C21DBD000A8D355 /* DMPCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6555DF8C1C21DBD000A8D355 /* Build configuration list for PBXNativeTarget "DMPCollectionView" */;
+			buildPhases = (
+				6555DF801C21DBD000A8D355 /* Sources */,
+				6555DF811C21DBD000A8D355 /* Frameworks */,
+				6555DF821C21DBD000A8D355 /* Headers */,
+				6555DF831C21DBD000A8D355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMPCollectionView;
+			productName = DMPCollectionView;
+			productReference = 6555DF851C21DBD000A8D355 /* DMPCollectionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		ABB023F0170791D300537A92 /* JNWCollectionView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABB0241B170791D300537A92 /* Build configuration list for PBXNativeTarget "JNWCollectionView" */;
@@ -257,6 +348,11 @@
 				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = AppJon;
+				TargetAttributes = {
+					6555DF841C21DBD000A8D355 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
 			buildConfigurationList = ABB023EB170791D300537A92 /* Build configuration list for PBXProject "JNWCollectionView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -271,11 +367,19 @@
 			projectRoot = "";
 			targets = (
 				ABB023F0170791D300537A92 /* JNWCollectionView */,
+				6555DF841C21DBD000A8D355 /* DMPCollectionView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6555DF831C21DBD000A8D355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABB023EF170791D300537A92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +390,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6555DF801C21DBD000A8D355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6555DF991C21DC7300A8D355 /* JNWCollectionViewDocumentView.m in Sources */,
+				6555DF901C21DC0F00A8D355 /* JNWCollectionViewListLayout.m in Sources */,
+				6555DF921C21DC1700A8D355 /* JNWCollectionViewGridLayout.m in Sources */,
+				6555DF8E1C21DBF400A8D355 /* JNWCollectionViewLayout.m in Sources */,
+				6555DFA71C21DD4B00A8D355 /* JNWScrollView.m in Sources */,
+				6555DF971C21DC6700A8D355 /* JNWCollectionViewData.m in Sources */,
+				6555DF951C21DC3000A8D355 /* JNWCollectionViewFramework.m in Sources */,
+				6555DF9D1C21DD2500A8D355 /* JNWCollectionViewReusableView.m in Sources */,
+				6555DF9F1C21DD2D00A8D355 /* NSIndexPath+JNWAdditions.m in Sources */,
+				6555DFA51C21DD4300A8D355 /* JNWClipView.m in Sources */,
+				6555DF9B1C21DC7B00A8D355 /* JNWCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABB023EC170791D300537A92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +441,79 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6555DF8A1C21DBD000A8D355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = DMPCollectionView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DMP.DMPCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6555DF8B1C21DBD000A8D355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = DMPCollectionView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DMP.DMPCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		ABB02419170791D300537A92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +615,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6555DF8C1C21DBD000A8D355 /* Build configuration list for PBXNativeTarget "DMPCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6555DF8A1C21DBD000A8D355 /* Debug */,
+				6555DF8B1C21DBD000A8D355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ABB023EB170791D300537A92 /* Build configuration list for PBXProject "JNWCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
