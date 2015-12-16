@@ -16,10 +16,4 @@ FOUNDATION_EXPORT const unsigned char DMPCollectionViewVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DMPCollectionView/PublicHeader.h>
 
-#import "JNWCollectionViewFramework.h"
-#import "JNWCollectionViewCell.h"
-#import "JNWCollectionViewReusableView.h"
-#import "JNWCollectionViewLayout.h"
-#import "JNWCollectionViewListLayout.h"
-#import "JNWCollectionViewGridLayout.h"
-#import "NSIndexPath+JNWAdditions.h"
+#import "JNWCollectionView.h"
