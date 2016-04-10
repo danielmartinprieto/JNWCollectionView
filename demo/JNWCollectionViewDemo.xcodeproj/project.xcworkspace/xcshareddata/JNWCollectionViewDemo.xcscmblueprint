@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "623FF6F374D22BC9E79608E37B443A964F3B5FF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "623FF6F374D22BC9E79608E37B443A964F3B5FF7" : 0,
+    "52FC6C770A2EDF17C166C3492851DDC1B14F32C1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F94CBC29-C3BF-41CF-AF3B-9D4A2D03C909",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "623FF6F374D22BC9E79608E37B443A964F3B5FF7" : "JNWCollectionView\/",
+    "52FC6C770A2EDF17C166C3492851DDC1B14F32C1" : "JNWCollectionView\/external\/JNWScrollView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JNWCollectionViewDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "demo\/JNWCollectionViewDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jwilling\/JNWScrollView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52FC6C770A2EDF17C166C3492851DDC1B14F32C1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/danielmartinprieto\/JNWCollectionView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "623FF6F374D22BC9E79608E37B443A964F3B5FF7"
+    }
+  ]
+}
