@@ -589,13 +589,11 @@ static void JNWCollectionViewCommonInit(JNWCollectionView *collectionView) {
 		// Calling recalculate on our data will update the bounds needed for the collection
 		// view, and optionally prepare the layout once again if the layout subclass decides
 		// it needs a recalculation.
-//		CGRect visibleBounds = (CGRect){ .size = self.visibleSize };
-//		BOOL shouldInvalidate = [self.collectionViewLayout shouldInvalidateLayoutForBoundsChange:visibleBounds];
-//		[self.data recalculateAndPrepareLayout:shouldInvalidate];
-//
+		CGRect visibleBounds = (CGRect){ .size = self.visibleSize };
+		BOOL shouldInvalidate = [self.collectionViewLayout shouldInvalidateLayoutForBoundsChange:visibleBounds];
+		[self.data recalculateAndPrepareLayout:shouldInvalidate];
+
 //		[self performFullRelayoutForcingSubviewsReset:shouldInvalidate];
-		
-		[self.data recalculateAndPrepareLayout:NO];
 		[self performFullRelayoutForcingSubviewsReset:NO];
 	}
 }
