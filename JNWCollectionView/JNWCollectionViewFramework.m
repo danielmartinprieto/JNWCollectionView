@@ -318,6 +318,11 @@ static void JNWCollectionViewCommonInit(JNWCollectionView *collectionView) {
 	_collectionViewFlags.wantsLayout = YES;
 			
 	// Remove any selected indexes we've been tracking.
+	if (_collectionViewFlags.delegateDidDeselect) {
+		for (NSIndexPath *indexPath in self.selectedIndexes) {
+			[self.delegate collectionView:self didDeselectItemAtIndexPath:indexPath];
+		}
+	}
 	[self.selectedIndexes removeAllObjects];
 	
 	[self.data recalculateAndPrepareLayout:YES];
@@ -880,7 +885,8 @@ static void JNWCollectionViewCommonInit(JNWCollectionView *collectionView) {
 }
 
 - (void)deselectItemAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
-	if (!self.allowsSelection ||
+	if (indexPath == nil ||
+		!self.allowsSelection ||
 		(_collectionViewFlags.delegateShouldDeselect && ![self.delegate collectionView:self shouldDeselectItemAtIndexPath:indexPath]) ||
 		(!self.allowsEmptySelection && self.indexPathsForSelectedItems.count <= 1)) {
 		return;
@@ -896,7 +902,8 @@ static void JNWCollectionViewCommonInit(JNWCollectionView *collectionView) {
 }
 
 - (void)selectItemAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
-	if (!self.allowsSelection ||
+	if (indexPath == nil ||
+		!self.allowsSelection ||
 		(_collectionViewFlags.delegateShouldSelect && ![self.delegate collectionView:self shouldSelectItemAtIndexPath:indexPath])) {
 		return;
 	}
