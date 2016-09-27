@@ -69,6 +69,7 @@
 
 @interface JNWCollectionViewCell()
 @property (nonatomic, strong) JNWCollectionViewCellBackgroundView *backgroundView;
+@property (nonatomic, strong) NSTrackingArea *trackingArea;
 @end
 
 @implementation JNWCollectionViewCell
@@ -78,17 +79,30 @@
 	self = [super initWithFrame:frameRect];
 	if (self == nil) return nil;
 	
+	[self _commonInit];
+	
+	return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+	self = [super initWithCoder:coder];
+	if (self == nil) return nil;
+
+	[self _commonInit];
+	
+	return self;
+}
+
+- (void)_commonInit {
 	self.wantsLayer = YES;
 	self.layerContentsRedrawPolicy = NSViewLayerContentsRedrawOnSetNeedsDisplay;
 
 	_backgroundView = [[JNWCollectionViewCellBackgroundView alloc] initWithFrame:self.bounds];
 	_backgroundView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
-	
+
 	_crossfadeDuration = 0.25;
-	
-	[self addSubview:_backgroundView positioned:NSWindowBelow relativeTo:_contentView];
-	
-	return self;
+
+	[self addSubview:_backgroundView positioned:NSWindowBelow relativeTo:nil];
 }
 
 - (void)prepareForReuse {
@@ -99,6 +113,22 @@
 
 - (void)willLayoutWithFrame:(CGRect)frame {
 	// for subclasses
+}
+
+- (void)didLayoutWithFrame:(CGRect)frame {
+	// for subclasses
+}
+
+- (void)updateTrackingAreas {
+	[super updateTrackingAreas];
+	if (self.trackingArea) {
+		[self removeTrackingArea:self.trackingArea];
+		self.trackingArea = nil;
+	}
+
+	NSTrackingAreaOptions options = (NSTrackingActiveAlways | NSTrackingInVisibleRect | NSTrackingMouseEnteredAndExited | NSTrackingMouseMoved);
+	self.trackingArea = [[NSTrackingArea alloc] initWithRect:[self bounds] options:options owner:self userInfo:nil];
+	[self addTrackingArea:self.trackingArea];
 }
 
 - (NSView *)contentView {
@@ -158,14 +188,10 @@
 }
 
 - (void)mouseDown:(NSEvent *)theEvent {
-	[super mouseDown:theEvent];
-	
 	[self.collectionView mouseDownInCollectionViewCell:self withEvent:theEvent];
 }
 
 - (void)mouseUp:(NSEvent *)theEvent {
-	[super mouseUp:theEvent];
-	
 	[self.collectionView mouseUpInCollectionViewCell:self withEvent:theEvent];
 	
 	if (theEvent.clickCount == 2) {
@@ -173,10 +199,37 @@
 	}
 }
 
+- (void)mouseMoved:(NSEvent *)theEvent {
+	[super mouseMoved:theEvent];
+
+	[self.collectionView mouseMovedInCollectionViewCell:self withEvent:theEvent];
+}
+
+- (void)mouseEntered:(NSEvent *)theEvent {
+	[super mouseEntered:theEvent];
+
+	[self.collectionView mouseEnteredInCollectionViewCell:self withEvent:theEvent];
+}
+
+- (void)mouseExited:(NSEvent *)theEvent {
+	[super mouseExited:theEvent];
+
+	[self.collectionView mouseExitedInCollectionViewCell:self withEvent:theEvent];
+}
+
+- (void)mouseDragged:(NSEvent *)theEvent {
+	[super mouseDragged:theEvent];
+
+	[self.collectionView mouseDraggedInCollectionViewCell:self withEvent:theEvent];
+}
+
 - (void)rightMouseDown:(NSEvent *)theEvent {
 	[super rightMouseDown:theEvent];
-	
+
 	[self.collectionView rightClickInCollectionViewCell:self withEvent:theEvent];
+}
+
+- (void)rightMouseUp:(NSEvent *)theEvent {
 }
 
 #pragma mark NSObject
