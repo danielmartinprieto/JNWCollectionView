@@ -467,7 +467,7 @@
 				INFOPLIST_FILE = DMPCollectionView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DMP.DMPCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,7 +504,7 @@
 				INFOPLIST_FILE = DMPCollectionView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DMP.DMPCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -622,6 +622,7 @@
 				6555DF8B1C21DBD000A8D355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABB023EB170791D300537A92 /* Build configuration list for PBXProject "JNWCollectionView" */ = {
 			isa = XCConfigurationList;
